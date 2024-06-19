@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import '@mantine/core/styles.css';
+import { createTheme, MantineProvider } from '@mantine/core';
 
+const theme = createTheme({
+
+});
 const font = Roboto({ subsets: ['cyrillic'], weight: '400' });
 
 export const metadata: Metadata = {
@@ -18,9 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <Navbar />
-        {children}
+        <MantineProvider theme={theme}>
+          <Navbar />
+          {children}
+        </MantineProvider>
       </body>
+
     </html>
   );
 }
