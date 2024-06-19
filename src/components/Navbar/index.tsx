@@ -16,13 +16,13 @@ function Navbar() {
                     <Link href={'/'}>
                         Ana Sayfa
                     </Link>
-                    <Link href={'/services'}>
+                    <Link href={'/hizmetler'}>
                         Hizmetler
                     </Link>
-                    <Link href={'/projects'}>
+                    <Link href={'/projeler'}>
                         Projeler
                     </Link>
-                    <Link href={'/contact'}>
+                    <Link href={'/iletisim'}>
                         İletişim
                     </Link>
                 </div>
