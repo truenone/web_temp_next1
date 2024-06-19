@@ -1,0 +1,11 @@
+.cursorRing {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ff7b00;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 5s ease-in;
+    transform: translate(-40%, -40%);
+    z-index: 1;
+}
